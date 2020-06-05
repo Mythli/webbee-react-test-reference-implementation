@@ -1,0 +1,18 @@
+version: '3.1'
+services:
+    react:
+        stdin_open: true
+        image: shashank/docker-react-test
+        build:
+            context: .
+            args:
+                APP_ENV: ${APP_ENV}
+        volumes:
+            - ./src:/usr/src/app/src
+        container_name: react
+        expose:
+            - 3000
+        ports:
+            - "3000:3000"
+        environment:
+            APP_ENV: dev

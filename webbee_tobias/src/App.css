@@ -1,0 +1,41 @@
+.inventory-container {
+	width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inventory-item {
+	width: 300px;
+	margin: 1rem;
+}
+
+.add-item {
+	width: 100%;
+}
+
+.inventory-item-header {
+	display: flex;
+	align-items: center;
+}
+
+.inventory-item-title {
+	flex: 1;
+}
+
+.type-item {
+	margin: 1rem;
+	width: 400px;
+}
+
+.add-field {
+	margin-top: 1rem;
+	width: 100%;
+}
+
+.flex-field-type-select button {
+    width: 150px;
+}
+
+.flex-field-setting {
+	margin: 0 0 1rem;
+}
